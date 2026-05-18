@@ -1,29 +1,131 @@
-# job-tracker
- A job tracking and management application.
+# PlacementPilot 🚀
 
-Full-stack MERN app using MVC for tracking job applications. Features secure authentication, visual stats, dynamic job listings, filters, and responsive search tools.
+PlacementPilot is a full-stack MERN web application designed to help students and job seekers efficiently track their job and internship applications in one place.
 
-# Description
+The platform allows users to manage applications, monitor application status, analyze progress, and organize their placement journey through an intuitive dashboard.
 
-A full-stack **MERN** application for managing job applications, featuring secure authentication, dynamic statistics, and responsive search tools.
+---
 
-- Uses **Model-View-Controller (MVC)** architecture for organized logic and separation of concerns  
-- Integrates **React Router** for seamless navigation between views  
-- Manages global state via **AppContext** and `useReducer` for predictable state handling  
-- Secures user sessions using **JWT-based authentication**  
-- Handles API requests efficiently with **Axios**  
-- Enhances UX with custom **alert system** and **paginated job listings**
+## ✨ Features
 
-# Live Demo
+- 🔐 User Authentication & Authorization
+- 📋 Track Job / Internship Applications
+- 📊 Dashboard Analytics & Statistics
+- 🔎 Search, Filter & Sort Applications
+- 🏢 Company-wise Application Management
+- 📅 Application Status Tracking
+- 📈 Visual Insights using Charts
+- ⚡ Responsive Modern UI
 
-[Job Tracker - Live Demo](https://dragons-job-tracker.onrender.com)
+---
 
-You can log-in with a test account:
+## 🛠️ Tech Stack
 
-```js
-email: test@test.com
-pass:  test
+### Frontend
+- React.js
+- React Router
+- Context API
+- Axios
+- Styled Components
+- Recharts
+
+### Backend
+- Node.js
+- Express.js
+- MongoDB
+- Mongoose
+- JWT Authentication
+
+---
+
+## 📂 Project Structure
+
+```bash
+client/         # React frontend
+controllers/    # Backend controllers
+routes/         # API routes
+models/         # MongoDB schemas
+middleware/     # Authentication middleware
+db/             # Database connection
+utils/          # Utility functions
 ```
+
+---
+
+## 🚀 Getting Started
+
+### 1️⃣ Clone Repository
+
+```bash
+git clone https://github.com/YOUR_USERNAME/placement-pilot.git
+```
+
+### 2️⃣ Install Dependencies
+
+```bash
+npm install
+cd client
+npm install
+```
+
+### 3️⃣ Setup Environment Variables
+
+Create a `.env` file in the root directory.
+
+```env
+MONGO_URL=your_mongodb_connection_string
+SECRET_KEY=your_secret_key
+LIFETIME=1d
+PORT=4000
+```
+
+### 4️⃣ Run Application
+
+```bash
+npm start
+```
+
+Frontend:
+```bash
+http://localhost:3000
+```
+
+Backend:
+```bash
+http://localhost:4000
+```
+
+---
+
+## 📸 Future Improvements
+
+- Resume Upload System
+- AI-based Job Recommendations
+- Interview Scheduling
+- Email Notifications
+- Dark Mode
+- Company Review Section
+
+---
+
+## 🎯 Purpose
+
+This project was built to strengthen full-stack development skills and understand real-world MERN application architecture including authentication, REST APIs, database management, and dashboard analytics.
+
+---
+
+## 👨‍💻 Author
+
+**Gaurav Uniyal**
+
+GitHub:  
+https://github.com/Gaurav-U
+
+---
+
+## ⭐ If you like this project
+
+Give it a star on GitHub ⭐
 
 # Preview & Screenshots
 
@@ -43,78 +145,5 @@ Submit job entries quickly using a simple input form.
 Update your basic profile information.
 ![Profile Page](demo/img/profile-page.jpg)
 
-# Technologies:
-MongoDB, Express, React, Node.js
-
-# Specifications
-
-- User can view their pending applications and job statistics, together with an interchangeable chart.
-- User can Register, Log-in, Log-out of the app securely with authentication
-- Be able to search through their list of jobs added, with filter search options. Can quickly remove filters in one click.
-- User can view and browse their list of jobs.
-- Jobs have pagination so the user can browse all their jobs in manageable chunks and won't be overwhelmed.
-- Add Job with position, company, location, status, and type as parameters
-- Users can update their profile
-
-### 🔧 Key Features  
-- 📊 Switchable charts displaying job stats and application status  
-- 🔐 Secure Register/Login/Logout using JWT  
-- 🔍 Searchable and filterable job list with instant reset  
-- 📁 Paginated job browsing for improved UX  
-- 📝 Add jobs with position, company, location, status, and type  
-- ⚙️ Profile update capability  
-- 📦 Built with modular MVC design for scalability  
-- 🔁 Global state management via Context + `useReducer`  
-- 🔔 Alert system for smooth interaction feedback  
-- 🔗 Axios-powered RESTful API calls  
-
-# Instructions to run locally
-
-- Note: You are going to need an existing [MongoDB Atlas account](https://www.mongodb.com/), to [Get a Connection String](https://www.mongodb.com/docs/guides/atlas/connection-string/).
-
-**1. Clone this repo (or download zip on GitHub)**
-
-**2. Go to the directory the files are located**
-
-    In the terminal:
-
-    ```powershell
-    cd /job-tracker
-    ```
-
-**3. Install dependencies**
-
-    In the terminal:
-
-    ```powershell
-    npm run install-dependencies
-    ```
-
-**4. Create an `.env` file**
-
-Setup values for the following parameters:
-
-- `MONGO_URL` - should be equal to your MongoDB connection string
-- `SECRET_KEY` - any string that is secret to you. You can use this [Key Generator](https://www.allkeysgenerator.com/)
-- `LIFETIME` - the lifetime of the JWT. This will determine a few things for the app such as for how long a user can stay logged in.
-- `PORT` - is the port number you want the express server to listen to. 4000 by default.
-
-Example of a `.env` file:
-
-```js
-MONGO_URL="Your_MongoDB_Connection_String"
-SECRET_KEY="Secret_Key_You_Generated_Random_Characters"
-LIFETIME="1d"
-PORT=4000
-```
-
-**5. Run the app on localhost:3000**
-
-In the terminal:
-```powershell
-npm run start
-```
-
-Now visit the URL: 
 
 http://localhost:3000/
