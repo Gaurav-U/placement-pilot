@@ -1,6 +1,7 @@
-# PlacementPilot 🚀
+# PlacementPilot (job tracker) 🚀
 
-PlacementPilot is a full-stack MERN web application designed to help students and job seekers efficiently track their job and internship applications in one place.
+
+Job tracker is a full-stack MERN web application designed to help students and job seekers efficiently track their job and internship applications in one place.
 
 The platform allows users to manage applications, monitor application status, analyze progress, and organize their placement journey through an intuitive dashboard.
 
