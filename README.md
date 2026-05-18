@@ -146,5 +146,3 @@ Submit job entries quickly using a simple input form.
 Update your basic profile information.
 ![Profile Page](demo/img/profile-page.jpg)
 
-
-http://localhost:3000/
